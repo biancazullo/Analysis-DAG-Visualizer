@@ -1,0 +1,77 @@
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+@import 'reactflow/dist/style.css';
+@import 'katex/dist/katex.min.css';
+
+/* Layout Header Styling */
+.app-header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  pointer-events: auto;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.mode-toggle-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-weight: 600;
+  width: fit-content;
+  transition: all 0.2s ease;
+}
+
+/* Custom Relational Node Styling */
+.relational-node {
+  background: white;
+  border: 2px solid #333;
+  border-radius: 10px;
+  min-width: 220px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.relational-node-header {
+  padding: 8px 12px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #333;
+}
+
+.relational-node-body {
+  padding: 12px;
+  font-size: 0.9rem;
+  background: transparent;
+}
+
+/* Dark Mode Adjustments */
+.dark-mode-node {
+  background: #252526 !important;
+  color: #e0e0e0 !important;
+  border-color: #555 !important;
+}
+.dark-mode-node .relational-node-header {
+  background: #2d2d2d !important;
+  border-color: #555 !important;
+  color: #61afef !important; /* Elegant mathematical blue for titles */
+}
