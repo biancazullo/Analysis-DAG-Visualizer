@@ -1,16 +1,20 @@
-# React + Vite
+# Analysis DAG Visualizer (Rudin Cheat Sheet)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive, visual guide to real analysis concepts, built to map out the interconnected definitions and theorems from Walter Rudin's *Principles of Mathematical Analysis*. 
 
-Currently, two official plugins are available:
+Instead of flipping through dense textbook pages, this application structures mathematical topics as an interactive **Directed Acyclic Graph (DAG)**. This allows students and educators to visually trace the logical lineage of real analysis—seeing exactly how foundational topological concepts build up to complex limits, sequences, and series.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Link
+Explore the interactive map here: [rudin-cheat-sheet.vercel.app](https://rudin-cheat-sheet.vercel.app)
 
-## React Compiler
+## ✨ Key Features
+* **Interactive Graph Canvas:** Built with React Flow, allowing users to fluidly pan, zoom, and navigate through the web of mathematical dependencies.
+* **Beautiful Math Rendering:** Integrates KaTeX to perfectly render rigorous definitions, set notation, and equations with textbook-quality typography.
+* **On-Demand Index Cards:** Clicking any node reveals a clean, dedicated breakdown panel containing the full definition and context.
+* **Dark Mode Support:** Features a polished dark UI theme with high-contrast index cards designed for comfortable, late-night proof reading.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+* **React** — Component-driven UI architecture
+* **React Flow** — Node-based graph rendering and interactive canvas
+* **KaTeX** — High-performance mathematical typesetting
+* **Vercel** — Production cloud hosting and deployment
