@@ -210,6 +210,7 @@ export default function App() {
       {/* REACT FLOW CANVAS */}
       <div style={{ flexGrow: 1, position: 'relative' }}>
         <ReactFlow
+          key={currentScene}
           nodes={nodes}
           edges={edges}
           onNodesChange={onNodesChange}

@@ -520,7 +520,7 @@ export const getGraphData = (isDarkMode) => ({
     nodes: [
       { id: 't-thm-root', type: 'mathNode', position: { x: 50, y: 1550 }, data: { title: 'Topology: Theorems', content: 'Click on any theorem to get hints on how to prove it!', isDarkMode } },
       
-      { id: 'tt-1', type: 'mathNode', position: { x: 400, y: 50 }, data: { title: 'Openness of Neighbourhoods', content: 'All neighbourhoods are open sets.', description: (
+      { id: 'tt-1', type: 'mathNode', position: { x: 500, y: 50 }, data: { title: 'Openness of Neighbourhoods', content: 'All neighbourhoods are open sets.', description: (
   <div>
     <span>Proof Hint: For any point </span><Latex math={String.raw`y`} /><span> in an </span><Latex math={String.raw`\epsilon`} /><span>-neighborhood </span><Latex math={String.raw`N_\epsilon(x)`} /><span>, calculate the distance </span><Latex math={String.raw`d = d(x,y)`} /><span>. Then, use the triangle inequality to show that a smaller neighborhood centered at </span><Latex math={String.raw`y`} /><span> with radius </span><Latex math={String.raw`\delta = \epsilon - d`} /><span> is entirely contained within </span><Latex math={String.raw`N_\epsilon(x)`} /><span>.</span>
   </div>
